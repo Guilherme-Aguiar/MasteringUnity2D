@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    //Instancia do componente rigidbody para o jogador
     private Rigidbody2D playerRigidBody2D;
+
+    private Animator playerAnim;
+
+    private SpriteRenderer playerSprite;
+
+
 
     private float movePlayerHorizontal;
     private float movePlayerVertical;
@@ -16,6 +21,8 @@ public class CharacterMovement : MonoBehaviour
     void Awake()
     {
         playerRigidBody2D = (Rigidbody2D)GetComponent(typeof(Rigidbody2D));
+        playerAnim = (Animator)GetComponent(typeof(Animator));
+        playerSprite = (SpriteRenderer)GetComponent(typeof(SpriteRenderer));
     }
 
     // Update is called once per frame
@@ -25,5 +32,47 @@ public class CharacterMovement : MonoBehaviour
         movePlayerVertical = Input.GetAxis("Vertical");
         movement = new Vector2(movePlayerHorizontal, movePlayerVertical);
         playerRigidBody2D.velocity = movement * speed;
+
+        if (movePlayerVertical == 0 && movePlayerHorizontal == 0)
+        {
+            playerAnim.SetBool("moving", false);
+        }
+        else
+        {
+            playerAnim.SetBool("moving", true);
+        }
+
+        if (movePlayerVertical != 0)
+        {
+            playerAnim.SetBool("xMove", false);
+            playerSprite.flipX = false;
+            if (movePlayerVertical > 0)
+            {
+                playerAnim.SetInteger("yMove", 1);
+            }
+            else if (movePlayerVertical < 0)
+            {
+                playerAnim.SetInteger("yMove", -1);
+            }
+        }
+        else
+        {
+            playerAnim.SetInteger("yMove", 0);
+            if (movePlayerHorizontal > 0)
+            {
+                playerAnim.SetBool("xMove", true);
+                playerSprite.flipX = false;
+            }
+            else if (movePlayerHorizontal < 0)
+            {
+                playerAnim.SetBool("xMove", true);
+                playerSprite.flipX = true;
+            }
+            else
+            {
+                playerAnim.SetBool("xMove", false);
+            }
+
+        }
     }
 }
