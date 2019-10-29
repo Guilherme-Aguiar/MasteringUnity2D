@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 5fae2488430dd764084326a4edb84621
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 886820757953224554
+    second: buildingsAndRoads_0
+  - first:
+      213: -250864170584953498
+    second: buildingsAndRoads_1
+  - first:
+      213: -6980990054478473865
+    second: buildingsAndRoads_2
+  - first:
+      213: -2073692007192595877
+    second: buildingsAndRoads_3
+  - first:
+      213: -9222742222357334845
+    second: buildingsAndRoads_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +85,126 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: buildingsAndRoads_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 667
+        width: 1098
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65345f2fd0de5cb429493f0ea8d89621
+      internalID: 886820757953224554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildingsAndRoads_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1505
+        width: 1985
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 1344, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0bb6cee1ca1ae499c28957e169a9fe
+      internalID: -250864170584953498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildingsAndRoads_2
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 742
+        width: 1102
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b185ed0e601db154e9ee0389fc0df892
+      internalID: -6980990054478473865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildingsAndRoads_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 504
+        width: 2011
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c82cba14abd3043ad703ab17266b04
+      internalID: -2073692007192595877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildingsAndRoads_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2270
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cb2a1ec46232446bfff1056b301e13
+      internalID: -9222742222357334845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
